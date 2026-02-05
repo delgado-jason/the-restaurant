@@ -14,6 +14,7 @@ export default {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: 'The Restaurant',
             template: './src/template.html',
         }),
     ],
