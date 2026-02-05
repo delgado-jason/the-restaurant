@@ -21,7 +21,7 @@ export default {
         rules: [
             {
                 test: /\.html$/i,
-                loader: 'html-loader',
+                use: ['html-loader'],
             },
             {
                 test: /\.(png|jpg|jpeg|gif)$/i,
@@ -29,7 +29,7 @@ export default {
             },
             {
                 test: /\.css$/i,
-                loader: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
