@@ -17,4 +17,20 @@ export default {
             template: './src/template.html',
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.css$/i,
+                loader: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 }
