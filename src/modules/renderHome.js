@@ -2,6 +2,7 @@
 
 const renderHome = function (img) {
     const contentContainer = document.getElementById('content')
+    contentContainer.innerHTML = ''
     contentContainer.innerHTML = `
         <h1>The Restaurant</h1>
         <img class="hero" src=${img} />

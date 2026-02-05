@@ -1,5 +1,7 @@
 import './styles.css'
 import renderHome from './modules/renderHome'
+import renderAbout from './modules/renderAbout'
+import renderMenu from './modules/renderMenu'
 import heroImage from './hero.jpg'
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -27,13 +29,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // Click Handlers
 
 const handleHomeClick = () => {
-    console.log('You clicked the "Home" button')
+    renderHome(heroImage)
 }
 
 const handleMenuClick = () => {
-    console.log('You clicked the "Menu" button')
+    renderMenu()
 }
 
 const handleAboutClick = () => {
-    console.log('You clicked the "About" button')
+    renderAbout()
 }
